@@ -1,0 +1,74 @@
+[
+ {
+  "slug": "ios-first-paywall",
+  "title": "Show your first paywall in a SwiftUI app",
+  "summary": "Add the iOS SDK with Swift Package Manager, show a dashboard-controlled paywall, unlock content with an entitlement and add Restore Purchases.",
+  "platform": "ios",
+  "category": "Get started",
+  "level": "Beginner",
+  "minutes": 24
+ },
+ {
+  "slug": "android-first-paywall",
+  "title": "Show your first paywall in an Android app",
+  "summary": "Add the Android SDK from Maven Central, configure it in your Application class, show a placement's paywall and unlock content with an entitlement.",
+  "platform": "android",
+  "category": "Get started",
+  "level": "Beginner",
+  "minutes": 24
+ },
+ {
+  "slug": "flutter-first-paywall",
+  "title": "Add a paywall and subscriptions to a Flutter app",
+  "summary": "Install billdog_flutter, raise the platform minimums, show a placement's paywall on both stores and unlock content with an entitlement.",
+  "platform": "flutter",
+  "category": "Get started",
+  "level": "Beginner",
+  "minutes": 22
+ },
+ {
+  "slug": "react-native-expo-paywall",
+  "title": "Add a paywall to a React Native or Expo app",
+  "summary": "Install the SDK with npm or the Expo config plugin, build a development client, show a placement's paywall and gate content on an entitlement.",
+  "platform": "react-native",
+  "category": "Get started",
+  "level": "Beginner",
+  "minutes": 25
+ },
+ {
+  "slug": "web-headless-paywall",
+  "title": "Build a headless web paywall with Stripe checkout",
+  "summary": "Connect Stripe, fetch a placement's offering with @billdog.io/web, render prices in your own UI, send buyers to checkout and unlock with an entitlement.",
+  "platform": "web",
+  "category": "Get started",
+  "level": "Intermediate",
+  "minutes": 26
+ },
+ {
+  "slug": "test-store-purchases",
+  "title": "Test purchases without an App Store or Play account",
+  "summary": "Create sandbox purchases, trials, failed renewals and refunds in the Test Store, then watch your app unlock, all before any store setup.",
+  "platform": "any",
+  "category": "Testing",
+  "level": "Beginner",
+  "minutes": 17
+ },
+ {
+  "slug": "paywall-ab-test",
+  "title": "Run your first paywall A/B test",
+  "summary": "Split traffic between two published paywalls, check significance on conversion and revenue, and ship the winner without an app update.",
+  "platform": "any",
+  "category": "Experiments",
+  "level": "Beginner",
+  "minutes": 16
+ },
+ {
+  "slug": "paywall-with-ai-agent",
+  "title": "Build and publish a paywall with an AI assistant",
+  "summary": "Connect Claude Code, Claude, Cursor or another MCP client to BillDog, and have the agent design, preview, publish and place a paywall for you.",
+  "platform": "any",
+  "category": "AI agents",
+  "level": "Beginner",
+  "minutes": 16
+ }
+]
