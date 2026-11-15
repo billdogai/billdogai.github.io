@@ -8,7 +8,7 @@ SITE = "https://billdog.io"
 UTM = "?utm_source=github_pages&utm_medium=referral&utm_campaign=codelabs"
 
 PLATFORM = {"ios": "iOS", "android": "Android", "flutter": "Flutter", "react-native": "React Native", "web": "Web", "any": "Any platform"}
-ICON = {"Get started": "🚀", "Testing": "🧪", "Experiments": "⚗️", "AI agents": "🤖"}
+ICON = {"Get started": "🚀", "Store setup": "🏪", "Testing": "🧪", "Troubleshooting": "🛟", "Experiments": "⚗️", "Auth": "🔑", "Analytics": "📊", "Engagement": "🔔", "Migration": "🚚", "AI agents": "🤖"}
 
 def e(s): return html.escape(s, quote=True)
 

@@ -6,7 +6,7 @@
   "platform": "ios",
   "category": "Get started",
   "level": "Beginner",
-  "minutes": 24
+  "minutes": 27
  },
  {
   "slug": "android-first-paywall",
@@ -15,7 +15,7 @@
   "platform": "android",
   "category": "Get started",
   "level": "Beginner",
-  "minutes": 24
+  "minutes": 27
  },
  {
   "slug": "flutter-first-paywall",
@@ -24,7 +24,7 @@
   "platform": "flutter",
   "category": "Get started",
   "level": "Beginner",
-  "minutes": 22
+  "minutes": 27
  },
  {
   "slug": "react-native-expo-paywall",
@@ -33,7 +33,7 @@
   "platform": "react-native",
   "category": "Get started",
   "level": "Beginner",
-  "minutes": 25
+  "minutes": 28
  },
  {
   "slug": "web-headless-paywall",
@@ -45,6 +45,42 @@
   "minutes": 26
  },
  {
+  "slug": "app-store-setup",
+  "title": "Connect the App Store to BillDog",
+  "summary": "Create subscriptions in App Store Connect, give BillDog your In-App Purchase key, point Apple's server notifications at your project and map products to an entitlement.",
+  "platform": "ios",
+  "category": "Store setup",
+  "level": "Beginner",
+  "minutes": 39
+ },
+ {
+  "slug": "play-store-setup",
+  "title": "Connect Google Play to BillDog",
+  "summary": "Create a Google Cloud service account, upload its JSON key, wire real-time developer notifications through Pub/Sub, and map Play base plans to BillDog products.",
+  "platform": "android",
+  "category": "Store setup",
+  "level": "Intermediate",
+  "minutes": 49
+ },
+ {
+  "slug": "ios-sandbox-testing",
+  "title": "Test real App Store purchases in the sandbox",
+  "summary": "Buy, renew, restore and cancel a real App Store subscription with a sandbox Apple Account and a BillDog test key, and check each step in the dashboard's Sandbox view.",
+  "platform": "ios",
+  "category": "Testing",
+  "level": "Intermediate",
+  "minutes": 33
+ },
+ {
+  "slug": "android-sandbox-testing",
+  "title": "Test real Google Play purchases",
+  "summary": "Add a license tester, install your internal testing build, buy with a Play test card and watch the purchase and its fast renewals land in BillDog's sandbox.",
+  "platform": "android",
+  "category": "Testing",
+  "level": "Intermediate",
+  "minutes": 31
+ },
+ {
   "slug": "test-store-purchases",
   "title": "Test purchases without an App Store or Play account",
   "summary": "Create sandbox purchases, trials, failed renewals and refunds in the Test Store, then watch your app unlock, all before any store setup.",
@@ -54,13 +90,67 @@
   "minutes": 17
  },
  {
+  "slug": "fix-paywall-not-showing",
+  "title": "Fix a paywall that doesn't show or has no products",
+  "summary": "Turn on SDK logging, read what `register` returned, then walk the chain from placement to store products until you find the broken link.",
+  "platform": "any",
+  "category": "Troubleshooting",
+  "level": "Intermediate",
+  "minutes": 29
+ },
+ {
   "slug": "paywall-ab-test",
   "title": "Run your first paywall A/B test",
-  "summary": "Split traffic between two published paywalls, check significance on conversion and revenue, and ship the winner without an app update.",
+  "summary": "Split traffic between two published paywalls, check significance on conversion rate, compare revenue, and ship the winner without an app update.",
   "platform": "any",
   "category": "Experiments",
   "level": "Beginner",
   "minutes": 16
+ },
+ {
+  "slug": "feature-flags",
+  "title": "Ship a feature behind a feature flag",
+  "summary": "Create a flag in the dashboard, read it in your app, roll it out by percentage, target it by user attribute, switch it off instantly and check who saw it.",
+  "platform": "any",
+  "category": "Experiments",
+  "level": "Beginner",
+  "minutes": 22
+ },
+ {
+  "slug": "auth-sign-in",
+  "title": "Add sign-in with BillDog Auth",
+  "summary": "Turn on BillDog Auth, build email and password sign-in with `@billdog.io/auth`, link the session to the user's purchases and verify the token on your Node backend.",
+  "platform": "web",
+  "category": "Auth",
+  "level": "Intermediate",
+  "minutes": 28
+ },
+ {
+  "slug": "analytics-funnel",
+  "title": "Track events and build your first funnel",
+  "summary": "Send custom events from your app, confirm they arrive in the dashboard, then build a funnel from your own event to BillDog's automatic paywall and purchase events.",
+  "platform": "any",
+  "category": "Analytics",
+  "level": "Beginner",
+  "minutes": 28
+ },
+ {
+  "slug": "push-and-in-app-messages",
+  "title": "Send push notifications and in-app messages",
+  "summary": "Connect APNs and FCM, register the device token in your iOS or Android app, turn on in-app messages, then send a test push and a targeted in-app message from the dashboard.",
+  "platform": "any",
+  "category": "Engagement",
+  "level": "Intermediate",
+  "minutes": 43
+ },
+ {
+  "slug": "migrate-from-revenuecat",
+  "title": "Move from RevenueCat to BillDog",
+  "summary": "Connect your stores, recreate the catalog, import RevenueCat subscribers, swap the SDK calls and point server notifications at BillDog without anyone losing access.",
+  "platform": "any",
+  "category": "Migration",
+  "level": "Intermediate",
+  "minutes": 42
  },
  {
   "slug": "paywall-with-ai-agent",

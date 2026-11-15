@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>BillDog Codelabs — hands-on paywall and subscription tutorials</title>
-<meta name="description" content="Free step-by-step codelabs for BillDog: add paywalls and in-app subscriptions to iOS, Android, Flutter, React Native and web apps, test purchases and run A/B tests.">
+<meta name="description" content="Free step-by-step codelabs for BillDog: paywalls and subscriptions on iOS, Android, Flutter, React Native and web, store setup, testing, A/B tests, auth, analytics and messaging.">
 <link rel="canonical" href="https://billdogai.github.io/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="BillDog Codelabs">
@@ -15,7 +15,7 @@
 <link rel="icon" href="logo.svg" type="image/svg+xml">
 <link rel="icon" href="favicon.png" type="image/png" sizes="64x64">
 <meta name="color-scheme" content="light dark">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "ItemList", "name": "BillDog codelabs", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Show your first paywall in a SwiftUI app", "url": "https://billdog.io/codelabs/ios-first-paywall"}, {"@type": "ListItem", "position": 2, "name": "Show your first paywall in an Android app", "url": "https://billdog.io/codelabs/android-first-paywall"}, {"@type": "ListItem", "position": 3, "name": "Add a paywall and subscriptions to a Flutter app", "url": "https://billdog.io/codelabs/flutter-first-paywall"}, {"@type": "ListItem", "position": 4, "name": "Add a paywall to a React Native or Expo app", "url": "https://billdog.io/codelabs/react-native-expo-paywall"}, {"@type": "ListItem", "position": 5, "name": "Build a headless web paywall with Stripe checkout", "url": "https://billdog.io/codelabs/web-headless-paywall"}, {"@type": "ListItem", "position": 6, "name": "Test purchases without an App Store or Play account", "url": "https://billdog.io/codelabs/test-store-purchases"}, {"@type": "ListItem", "position": 7, "name": "Run your first paywall A/B test", "url": "https://billdog.io/codelabs/paywall-ab-test"}, {"@type": "ListItem", "position": 8, "name": "Build and publish a paywall with an AI assistant", "url": "https://billdog.io/codelabs/paywall-with-ai-agent"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "ItemList", "name": "BillDog codelabs", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Show your first paywall in a SwiftUI app", "url": "https://billdog.io/codelabs/ios-first-paywall"}, {"@type": "ListItem", "position": 2, "name": "Show your first paywall in an Android app", "url": "https://billdog.io/codelabs/android-first-paywall"}, {"@type": "ListItem", "position": 3, "name": "Add a paywall and subscriptions to a Flutter app", "url": "https://billdog.io/codelabs/flutter-first-paywall"}, {"@type": "ListItem", "position": 4, "name": "Add a paywall to a React Native or Expo app", "url": "https://billdog.io/codelabs/react-native-expo-paywall"}, {"@type": "ListItem", "position": 5, "name": "Build a headless web paywall with Stripe checkout", "url": "https://billdog.io/codelabs/web-headless-paywall"}, {"@type": "ListItem", "position": 6, "name": "Connect the App Store to BillDog", "url": "https://billdog.io/codelabs/app-store-setup"}, {"@type": "ListItem", "position": 7, "name": "Connect Google Play to BillDog", "url": "https://billdog.io/codelabs/play-store-setup"}, {"@type": "ListItem", "position": 8, "name": "Test real App Store purchases in the sandbox", "url": "https://billdog.io/codelabs/ios-sandbox-testing"}, {"@type": "ListItem", "position": 9, "name": "Test real Google Play purchases", "url": "https://billdog.io/codelabs/android-sandbox-testing"}, {"@type": "ListItem", "position": 10, "name": "Test purchases without an App Store or Play account", "url": "https://billdog.io/codelabs/test-store-purchases"}, {"@type": "ListItem", "position": 11, "name": "Fix a paywall that doesn't show or has no products", "url": "https://billdog.io/codelabs/fix-paywall-not-showing"}, {"@type": "ListItem", "position": 12, "name": "Run your first paywall A/B test", "url": "https://billdog.io/codelabs/paywall-ab-test"}, {"@type": "ListItem", "position": 13, "name": "Ship a feature behind a feature flag", "url": "https://billdog.io/codelabs/feature-flags"}, {"@type": "ListItem", "position": 14, "name": "Add sign-in with BillDog Auth", "url": "https://billdog.io/codelabs/auth-sign-in"}, {"@type": "ListItem", "position": 15, "name": "Track events and build your first funnel", "url": "https://billdog.io/codelabs/analytics-funnel"}, {"@type": "ListItem", "position": 16, "name": "Send push notifications and in-app messages", "url": "https://billdog.io/codelabs/push-and-in-app-messages"}, {"@type": "ListItem", "position": 17, "name": "Move from RevenueCat to BillDog", "url": "https://billdog.io/codelabs/migrate-from-revenuecat"}, {"@type": "ListItem", "position": 18, "name": "Build and publish a paywall with an AI assistant", "url": "https://billdog.io/codelabs/paywall-with-ai-agent"}]}</script>
 <style>
   :root {
     --bg: #ffffff; --fg: #1e293b; --muted: #64748b; --line: #e2e8f0; --card: #ffffff;
@@ -111,7 +111,7 @@
     <div class="hero">
       <span class="eyebrow">Interactive codelabs</span>
       <h1>Learn BillDog by building</h1>
-      <p class="lead">8 short, hands-on tutorials that take you from an empty project to a working result: a paywall on screen, a test purchase that unlocks content, or a live A/B test. Every step has copy-paste code checked against the current SDKs.</p>
+      <p class="lead">18 short, hands-on tutorials that take you from an empty project to a working result: a paywall on screen, a store connected and tested, a feature flag rolled out, users signed in, a funnel built or a push message sent. Every step has copy-paste code checked against the current SDKs.</p>
       <div class="ctas">
         <a class="btn btn-primary" href="#codelabs">Browse the codelabs ↓</a>
         <a class="btn btn-ghost" href="https://billdog.io/auth?tab=signup&amp;utm_source=github_pages&amp;utm_medium=referral&amp;utm_campaign=codelabs">Create a free project</a>
@@ -120,32 +120,32 @@
 
     <section id="codelabs" aria-labelledby="codelabs-h">
       <h2 id="codelabs-h" style="text-align:center">Browse the codelabs</h2>
-      <p class="sub" style="text-align:center">Pick your platform. Testing, experiments and AI-agent codelabs work with every SDK.</p>
+      <p class="sub" style="text-align:center">Pick your platform. Codelabs marked “Any platform” work with every SDK.</p>
       <div class="chips" role="group" aria-label="Filter by platform"><button type="button" class="chip on" data-filter="all" aria-pressed="true">All</button><button type="button" class="chip" data-filter="ios" aria-pressed="false">iOS</button><button type="button" class="chip" data-filter="android" aria-pressed="false">Android</button><button type="button" class="chip" data-filter="flutter" aria-pressed="false">Flutter</button><button type="button" class="chip" data-filter="react-native" aria-pressed="false">React Native</button><button type="button" class="chip" data-filter="web" aria-pressed="false">Web</button></div>
       <div class="grid" id="grid">
       <a class="card" href="https://billdog.io/codelabs/ios-first-paywall?utm_source=github_pages&amp;utm_medium=referral&amp;utm_campaign=codelabs" data-platform="ios">
         <div class="card-top"><span class="tag">🚀 Get started</span><span class="plat">iOS</span></div>
         <h3>Show your first paywall in a SwiftUI app</h3>
         <p>Add the iOS SDK with Swift Package Manager, show a dashboard-controlled paywall, unlock content with an entitlement and add Restore Purchases.</p>
-        <div class="card-foot"><span>⏱ 24 min · Beginner</span><span class="go">Start codelab →</span></div>
+        <div class="card-foot"><span>⏱ 27 min · Beginner</span><span class="go">Start codelab →</span></div>
       </a>
       <a class="card" href="https://billdog.io/codelabs/android-first-paywall?utm_source=github_pages&amp;utm_medium=referral&amp;utm_campaign=codelabs" data-platform="android">
         <div class="card-top"><span class="tag">🚀 Get started</span><span class="plat">Android</span></div>
         <h3>Show your first paywall in an Android app</h3>
         <p>Add the Android SDK from Maven Central, configure it in your Application class, show a placement&#x27;s paywall and unlock content with an entitlement.</p>
-        <div class="card-foot"><span>⏱ 24 min · Beginner</span><span class="go">Start codelab →</span></div>
+        <div class="card-foot"><span>⏱ 27 min · Beginner</span><span class="go">Start codelab →</span></div>
       </a>
       <a class="card" href="https://billdog.io/codelabs/flutter-first-paywall?utm_source=github_pages&amp;utm_medium=referral&amp;utm_campaign=codelabs" data-platform="flutter">
         <div class="card-top"><span class="tag">🚀 Get started</span><span class="plat">Flutter</span></div>
         <h3>Add a paywall and subscriptions to a Flutter app</h3>
         <p>Install billdog_flutter, raise the platform minimums, show a placement&#x27;s paywall on both stores and unlock content with an entitlement.</p>
-        <div class="card-foot"><span>⏱ 22 min · Beginner</span><span class="go">Start codelab →</span></div>
+        <div class="card-foot"><span>⏱ 27 min · Beginner</span><span class="go">Start codelab →</span></div>
       </a>
       <a class="card" href="https://billdog.io/codelabs/react-native-expo-paywall?utm_source=github_pages&amp;utm_medium=referral&amp;utm_campaign=codelabs" data-platform="react-native">
         <div class="card-top"><span class="tag">🚀 Get started</span><span class="plat">React Native</span></div>
         <h3>Add a paywall to a React Native or Expo app</h3>
         <p>Install the SDK with npm or the Expo config plugin, build a development client, show a placement&#x27;s paywall and gate content on an entitlement.</p>
-        <div class="card-foot"><span>⏱ 25 min · Beginner</span><span class="go">Start codelab →</span></div>
+        <div class="card-foot"><span>⏱ 28 min · Beginner</span><span class="go">Start codelab →</span></div>
       </a>
       <a class="card" href="https://billdog.io/codelabs/web-headless-paywall?utm_source=github_pages&amp;utm_medium=referral&amp;utm_campaign=codelabs" data-platform="web">
         <div class="card-top"><span class="tag">🚀 Get started</span><span class="plat">Web</span></div>
@@ -153,17 +153,77 @@
         <p>Connect Stripe, fetch a placement&#x27;s offering with @billdog.io/web, render prices in your own UI, send buyers to checkout and unlock with an entitlement.</p>
         <div class="card-foot"><span>⏱ 26 min · Intermediate</span><span class="go">Start codelab →</span></div>
       </a>
+      <a class="card" href="https://billdog.io/codelabs/app-store-setup?utm_source=github_pages&amp;utm_medium=referral&amp;utm_campaign=codelabs" data-platform="ios">
+        <div class="card-top"><span class="tag">🏪 Store setup</span><span class="plat">iOS</span></div>
+        <h3>Connect the App Store to BillDog</h3>
+        <p>Create subscriptions in App Store Connect, give BillDog your In-App Purchase key, point Apple&#x27;s server notifications at your project and map products to an entitlement.</p>
+        <div class="card-foot"><span>⏱ 39 min · Beginner</span><span class="go">Start codelab →</span></div>
+      </a>
+      <a class="card" href="https://billdog.io/codelabs/play-store-setup?utm_source=github_pages&amp;utm_medium=referral&amp;utm_campaign=codelabs" data-platform="android">
+        <div class="card-top"><span class="tag">🏪 Store setup</span><span class="plat">Android</span></div>
+        <h3>Connect Google Play to BillDog</h3>
+        <p>Create a Google Cloud service account, upload its JSON key, wire real-time developer notifications through Pub/Sub, and map Play base plans to BillDog products.</p>
+        <div class="card-foot"><span>⏱ 49 min · Intermediate</span><span class="go">Start codelab →</span></div>
+      </a>
+      <a class="card" href="https://billdog.io/codelabs/ios-sandbox-testing?utm_source=github_pages&amp;utm_medium=referral&amp;utm_campaign=codelabs" data-platform="ios">
+        <div class="card-top"><span class="tag">🧪 Testing</span><span class="plat">iOS</span></div>
+        <h3>Test real App Store purchases in the sandbox</h3>
+        <p>Buy, renew, restore and cancel a real App Store subscription with a sandbox Apple Account and a BillDog test key, and check each step in the dashboard&#x27;s Sandbox view.</p>
+        <div class="card-foot"><span>⏱ 33 min · Intermediate</span><span class="go">Start codelab →</span></div>
+      </a>
+      <a class="card" href="https://billdog.io/codelabs/android-sandbox-testing?utm_source=github_pages&amp;utm_medium=referral&amp;utm_campaign=codelabs" data-platform="android">
+        <div class="card-top"><span class="tag">🧪 Testing</span><span class="plat">Android</span></div>
+        <h3>Test real Google Play purchases</h3>
+        <p>Add a license tester, install your internal testing build, buy with a Play test card and watch the purchase and its fast renewals land in BillDog&#x27;s sandbox.</p>
+        <div class="card-foot"><span>⏱ 31 min · Intermediate</span><span class="go">Start codelab →</span></div>
+      </a>
       <a class="card" href="https://billdog.io/codelabs/test-store-purchases?utm_source=github_pages&amp;utm_medium=referral&amp;utm_campaign=codelabs" data-platform="any">
         <div class="card-top"><span class="tag">🧪 Testing</span><span class="plat">Any platform</span></div>
         <h3>Test purchases without an App Store or Play account</h3>
         <p>Create sandbox purchases, trials, failed renewals and refunds in the Test Store, then watch your app unlock, all before any store setup.</p>
         <div class="card-foot"><span>⏱ 17 min · Beginner</span><span class="go">Start codelab →</span></div>
       </a>
+      <a class="card" href="https://billdog.io/codelabs/fix-paywall-not-showing?utm_source=github_pages&amp;utm_medium=referral&amp;utm_campaign=codelabs" data-platform="any">
+        <div class="card-top"><span class="tag">🛟 Troubleshooting</span><span class="plat">Any platform</span></div>
+        <h3>Fix a paywall that doesn&#x27;t show or has no products</h3>
+        <p>Turn on SDK logging, read what `register` returned, then walk the chain from placement to store products until you find the broken link.</p>
+        <div class="card-foot"><span>⏱ 29 min · Intermediate</span><span class="go">Start codelab →</span></div>
+      </a>
       <a class="card" href="https://billdog.io/codelabs/paywall-ab-test?utm_source=github_pages&amp;utm_medium=referral&amp;utm_campaign=codelabs" data-platform="any">
         <div class="card-top"><span class="tag">⚗️ Experiments</span><span class="plat">Any platform</span></div>
         <h3>Run your first paywall A/B test</h3>
-        <p>Split traffic between two published paywalls, check significance on conversion and revenue, and ship the winner without an app update.</p>
+        <p>Split traffic between two published paywalls, check significance on conversion rate, compare revenue, and ship the winner without an app update.</p>
         <div class="card-foot"><span>⏱ 16 min · Beginner</span><span class="go">Start codelab →</span></div>
+      </a>
+      <a class="card" href="https://billdog.io/codelabs/feature-flags?utm_source=github_pages&amp;utm_medium=referral&amp;utm_campaign=codelabs" data-platform="any">
+        <div class="card-top"><span class="tag">⚗️ Experiments</span><span class="plat">Any platform</span></div>
+        <h3>Ship a feature behind a feature flag</h3>
+        <p>Create a flag in the dashboard, read it in your app, roll it out by percentage, target it by user attribute, switch it off instantly and check who saw it.</p>
+        <div class="card-foot"><span>⏱ 22 min · Beginner</span><span class="go">Start codelab →</span></div>
+      </a>
+      <a class="card" href="https://billdog.io/codelabs/auth-sign-in?utm_source=github_pages&amp;utm_medium=referral&amp;utm_campaign=codelabs" data-platform="web">
+        <div class="card-top"><span class="tag">🔑 Auth</span><span class="plat">Web</span></div>
+        <h3>Add sign-in with BillDog Auth</h3>
+        <p>Turn on BillDog Auth, build email and password sign-in with `@billdog.io/auth`, link the session to the user&#x27;s purchases and verify the token on your Node backend.</p>
+        <div class="card-foot"><span>⏱ 28 min · Intermediate</span><span class="go">Start codelab →</span></div>
+      </a>
+      <a class="card" href="https://billdog.io/codelabs/analytics-funnel?utm_source=github_pages&amp;utm_medium=referral&amp;utm_campaign=codelabs" data-platform="any">
+        <div class="card-top"><span class="tag">📊 Analytics</span><span class="plat">Any platform</span></div>
+        <h3>Track events and build your first funnel</h3>
+        <p>Send custom events from your app, confirm they arrive in the dashboard, then build a funnel from your own event to BillDog&#x27;s automatic paywall and purchase events.</p>
+        <div class="card-foot"><span>⏱ 28 min · Beginner</span><span class="go">Start codelab →</span></div>
+      </a>
+      <a class="card" href="https://billdog.io/codelabs/push-and-in-app-messages?utm_source=github_pages&amp;utm_medium=referral&amp;utm_campaign=codelabs" data-platform="any">
+        <div class="card-top"><span class="tag">🔔 Engagement</span><span class="plat">Any platform</span></div>
+        <h3>Send push notifications and in-app messages</h3>
+        <p>Connect APNs and FCM, register the device token in your iOS or Android app, turn on in-app messages, then send a test push and a targeted in-app message from the dashboard.</p>
+        <div class="card-foot"><span>⏱ 43 min · Intermediate</span><span class="go">Start codelab →</span></div>
+      </a>
+      <a class="card" href="https://billdog.io/codelabs/migrate-from-revenuecat?utm_source=github_pages&amp;utm_medium=referral&amp;utm_campaign=codelabs" data-platform="any">
+        <div class="card-top"><span class="tag">🚚 Migration</span><span class="plat">Any platform</span></div>
+        <h3>Move from RevenueCat to BillDog</h3>
+        <p>Connect your stores, recreate the catalog, import RevenueCat subscribers, swap the SDK calls and point server notifications at BillDog without anyone losing access.</p>
+        <div class="card-foot"><span>⏱ 42 min · Intermediate</span><span class="go">Start codelab →</span></div>
       </a>
       <a class="card" href="https://billdog.io/codelabs/paywall-with-ai-agent?utm_source=github_pages&amp;utm_medium=referral&amp;utm_campaign=codelabs" data-platform="any">
         <div class="card-top"><span class="tag">🤖 AI agents</span><span class="plat">Any platform</span></div>
